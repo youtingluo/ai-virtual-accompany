@@ -1,6 +1,4 @@
-a {
-  text-decoration: underline;
-}
-.index-title {
-  font-size: 100px;
+.box {
+  height: 300px;
+  @include gradient-radial($neutral, $black)
 }

@@ -304,8 +304,9 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #E9E2F3; //$gray-100 !default; custom
 $dark:          $gray-900 !default;
+$neutral:     #28085c; //custom
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -374,11 +375,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  2: $spacer * 0.5, // 8
+  3: $spacer * 0.75, // 12
+  4: $spacer, // 16
+  5: $spacer * 1.25, // 20
+  6: $spacer * 1.5, // 24
+  8: $spacer * 2, // 32
+  10: $spacer * 2.5, // 40
+  12: $spacer * 3, // 48
+  14: $spacer * 3.5, // 56
+  26: $spacer * 6.5, // 104
+  40: $spacer * 10, // 160
+  54: $spacer * 13.5, // 216
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -419,7 +427,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0; //1rem !default; custom
 
 
 // Grid breakpoints
@@ -464,7 +472,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           2rem; //1.5rem !default; custom
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -537,10 +545,9 @@ $aspect-ratios: (
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
 // scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// stylelint-disable value-keyword-case custom
+$font-family-sans-serif:      'Noto Sans TC', 'Shrikhand', cursive,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -556,11 +563,11 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-semibold:        600 !default;
+$font-weight-semibold:        500; //600 !default; custom
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          900; //bolder !default; custom
 
-$font-weight-base:            $font-weight-normal !default;
+$font-weight-base:            $font-weight-normal !default; 
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
@@ -576,17 +583,18 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  base: $font-size-base,
+  1: $font-size-base * 6, // 96
+  2: $font-size-base * 4, // 64
+  3: $font-size-base * 3, // 48
+  4: $font-size-base * 2, // 32
+  5: $font-size-base * 1.5, // 24
+  6: $font-size-base * 1.25 // 20
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0; //$spacer * .5 !default; custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
@@ -1058,7 +1066,7 @@ $zindex-toast:                      1090 !default;
 // scss-docs-start nav-variables
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
-$nav-link-font-size:                null !default;
+$nav-link-font-size:                1rem; //null !default; custom
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
 $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
@@ -1098,7 +1106,7 @@ $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
-$navbar-toggler-focus-width:        $btn-focus-width !default;
+$navbar-toggler-focus-width:        0; //$btn-focus-width !default; custom
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
 $navbar-light-color:                rgba($black, .55) !default;
@@ -1112,12 +1120,12 @@ $navbar-light-brand-hover-color:    $navbar-light-active-color !default;
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-dark-variables
-$navbar-dark-color:                 rgba($white, .55) !default;
+$navbar-dark-color:                 $white; //rgba($white, .55) !default; custom
 $navbar-dark-hover-color:           rgba($white, .75) !default;
 $navbar-dark-active-color:          $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+$navbar-dark-toggler-border-color:  0; //rgba($white, .1) !default; custom
 $navbar-dark-brand-color:           $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 // scss-docs-end navbar-dark-variables
