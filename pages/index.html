@@ -1,31 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <h1 class="display-1 text-primary fs-3 fs-lg-1">我是首頁</h1>
+    <button class="btn btn-primary-200">123</button>
     <h2>ALPHABOX+</h2>
-    <div class="box container">
+    <div class="container">
       <div class="btn cus-btn">Diane</div>
     </div>
-    <div class="card" style="width: 18rem">
-      <div class="card-body card-body-bg">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+    <!-- 聯絡我們 -->
+    <section class="pt-15 pb-20 py-lg-36 contact-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="fs-lg-3 fw-bold mb-8">聯絡我們</h2>
+            <div class="mb-13h">
+              <span class="p-1 p-md-1h me-2 rounded-circle bg-white d-inline-block"></span>
+              <span class="d-inline-block line"></span>
+            </div>
+            <p>讓科技成為您的最佳夥伴</p>
+            <p>立即體驗神奇功能並享限時優惠！</p>
+          </div>
+          <div class="col-lg-7">
+            <div>
+              <span class="material-symbols-outlined mb-4 fs-icon">
+                emergency
+              </span>
+              <form>
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label class="text-primary-100 fs-base fs-lg-6" for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <textarea class="form-control" id="floatingComments" placeholder="Comments"
+                    style="height: 120px"></textarea>
+                  <label class="text-primary-100 fs-base fs-lg-6" for="floatingComments">Comments</label>
+                </div>
+                <div class="row justify-content-end">
+                  <div class="col-7">
+                    <button class="btn btn-primary-300 w-100">送出</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 角色卡片 -->
+    <div class="row row-cols-2 row-cols-lg-4 g-0">
+      <div class="col">
+        <div class="intro-card" style="background-image: url(../assets/images/diane.png);">
+          <p class="intro-card-number">1</p>
+          <p class="intro-card-name">Diane</p>
+          <div class="intro-card-description">
+            <div>
+              <p class="fw-bold">知識型</p>
+              <p class="fw-normal">學術領導/知識分享/智能問答</p>
+            </div>
+            <a href="#" class="intro-card-link">
+              <img src="../assets/images/line_end_arrow_notch.svg" alt="line_end_arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="intro-card" style="background-image: url(../assets/images/felix.png);">
+          <p class="intro-card-number">2</p>
+          <p class="intro-card-name">Felix</p>
+          <div class="intro-card-description">
+            <div>
+              <p class="fw-bold">娛樂型</p>
+              <p class="fw-normal">音樂播放/語音互動/遊戲陪伴</p>
+            </div>
+            <a href="#" class="intro-card-link">
+              <img src="../assets/images/line_end_arrow_notch.svg" alt="line_end_arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="intro-card" style="background-image: url(../assets/images/karina.png);">
+          <p class="intro-card-number">3</p>
+          <p class="intro-card-name">Karina</p>
+          <div class="intro-card-description">
+            <div>
+              <p class="fw-bold">生活型</p>
+              <p class="fw-normal">健康提醒/日程安排/智能家居</p>
+            </div>
+            <a href="#" class="intro-card-link">
+              <img src="../assets/images/line_end_arrow_notch.svg" alt="line_end_arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="intro-card" style="background-image: url(../assets/images/vito.png);">
+          <p class="intro-card-number">4</p>
+          <p class="intro-card-name">Vito</p>
+          <div class="intro-card-description">
+            <div>
+              <p class="fw-bold">情感型</p>
+              <p class="fw-normal">情感識別/心情分析/心靈支持</p>
+            </div>
+
+            <a href="#" class="intro-card-link">
+              <img src="../assets/images/line_end_arrow_notch.svg" alt="line_end_arrow">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

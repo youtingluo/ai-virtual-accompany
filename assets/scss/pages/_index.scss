@@ -1,4 +1,8 @@
-.box {
-  height: 300px;
-  @include gradient-radial($neutral, $black)
+.contact-bg {
+  background-color: $primary-100;
+}
+.line {
+  width: 124px;
+  border: 6px solid $white;
+  border-radius: 12px;
 }

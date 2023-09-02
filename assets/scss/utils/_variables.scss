@@ -375,6 +375,8 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
+  1: $spacer * 0.25, // 4
+  1h: $spacer * 0.375, // 6
   2: $spacer * 0.5, // 8
   3: $spacer * 0.75, // 12
   4: $spacer, // 16
@@ -383,8 +385,12 @@ $spacers: (
   8: $spacer * 2, // 32
   10: $spacer * 2.5, // 40
   12: $spacer * 3, // 48
+  13h: $spacer * 3.375, // 54
   14: $spacer * 3.5, // 56
+  15: $spacer * 3.75, // 60
+  20: $spacer * 5, // 80
   26: $spacer * 6.5, // 104
+  36: $spacer * 9, // 144
   40: $spacer * 10, // 160
   54: $spacer * 13.5, // 216
 ) !default;
@@ -589,7 +595,8 @@ $font-sizes: (
   3: $font-size-base * 3, // 48
   4: $font-size-base * 2, // 32
   5: $font-size-base * 1.5, // 24
-  6: $font-size-base * 1.25 // 20
+  6: $font-size-base * 1.25, // 20
+  icon: $font-size-base * 5, // 80
 ) !default;
 // scss-docs-end font-sizes
 
@@ -813,7 +820,7 @@ $form-label-margin-bottom:              .5rem !default;
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
-$form-label-color:                      null !default;
+$form-label-color:                      #1F0F39;;//null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
