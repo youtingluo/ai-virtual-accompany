@@ -1,6 +1,6 @@
 
 .navbar-bg {
-  @include gradient-y($primary-400, $primary-dark);
+  @include gradient-radial($primary-400, $primary-dark);
 }
 .sub-btn {
   @include button-variant($white, $white);

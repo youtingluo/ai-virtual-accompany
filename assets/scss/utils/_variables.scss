@@ -390,7 +390,9 @@ $spacers: (
   14: $spacer * 3.5, // 56
   15: $spacer * 3.75, // 60
   20: $spacer * 5, // 80
+  24: $spacer * 6, // 96
   26: $spacer * 6.5, // 104
+  32: $spacer * 8, // 128
   36: $spacer * 9, // 144
   40: $spacer * 10, // 160
   54: $spacer * 13.5, // 216
@@ -594,6 +596,7 @@ $font-sizes: (
   1: $font-size-base * 6, // 96
   2: $font-size-base * 4, // 64
   3: $font-size-base * 3, // 48
+  3h: $font-size-base * 2.5, // 40
   4: $font-size-base * 2, // 32
   5: $font-size-base * 1.5, // 24
   6: $font-size-base * 1.25, // 20

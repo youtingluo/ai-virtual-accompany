@@ -6,3 +6,82 @@
   border: 6px solid $white;
   border-radius: 12px;
 }
+.news {
+  @include gradient-radial(#28085C, $black);
+}
+.banner {
+  @include gradient-radial($primary-400, $primary-dark);
+}
+.what-us {
+  overflow: hidden;
+  z-index: 10;
+  background-color: #000;
+  // @include gradient-radial(#300871, $black);
+  &::before {
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    filter: blur(12px);
+    background-position: center;
+    // background-image: url(https://s3-alpha-sig.figma.com/img/1bc0/c10e/c97e7baa19291ad1b68400c352fe0b46?Expires=1694390400&Signature=Ehdn1Y87Wsk1u3aX9C8lfa9GCsVGzRh1e7VxLEin50D0SJ7yqUKnIlci-Zm6BIQtqu99qR6eMOnf22us3F3QraHEZQuV5spCExORp0bmcrVzHt~VjSt3WgFPJ92RTgbuf~-mYT25fOpkn6Oyxr3UdYGw2SlN0Z-9HwEEN5p~d2HLY1MVnfftsJCVsuMX6--vv3bi7G79BFJyWGwJCwWB52zhr4IKZyRWSQbuTfuBugPKFCVdl9uZIPtOOZWNA4p2BHbeXmvu-4m8AwBquRqBsjMoohlcKPkzzbB3NbtdD40orBjXZDLop4LL3HdOoJ8GW7hRlqKWP0moi3jIvQK2dw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  }
+  .rec-1 {
+    height: 40px;
+    @include gradient-x($primary-400, $primary-dark)
+  }
+  .rec-2 {
+    height: 40px;
+    @include gradient-x($primary-dark, $primary-400)
+  }
+  .blur-img {
+    filter: blur(0px);
+    z-index: 0;
+  }
+}
+.what-section-swiper {
+  position: relative;
+  z-index: 200;
+  padding: 0 180px;
+  height: 560px;
+  .swiper-slide {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-next {
+    width: 180px;
+    background-image: url(../assets/images/line_end_arrow_notch.svg) !important;
+    background-repeat: no-repeat;
+    &::after {
+      content: ''
+    }
+  }
+} 
+.use-exp {
+  @include gradient-radial($black, #28085C);
+  &-text {
+    font-size: 128px;
+    color: rgba(255, 255, 255, 0.04);
+    transform: translate(-10%, 50%);
+    left: 0;
+    bottom: 0;
+    @include media-breakpoint-up(lg) {
+      font-size: 400px;
+    }
+  }
+  
+  
+}
+.swiper-slide {
+  height: 416px;
+}
+.swiper-scrollbar-drag {
+  background-color: #fff;
+}
+.swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.20);;
+}
