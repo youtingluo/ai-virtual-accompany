@@ -16,7 +16,7 @@
   overflow: hidden;
   z-index: 10;
   background-color: #000;
-  // @include gradient-radial(#300871, $black);
+  @include gradient-radial(#300871, $black);
   &::before {
     z-index: -1;
     width: 50%;
@@ -27,7 +27,7 @@
     right: 50%;
     filter: blur(12px);
     background-position: center;
-    // background-image: url(https://s3-alpha-sig.figma.com/img/1bc0/c10e/c97e7baa19291ad1b68400c352fe0b46?Expires=1694390400&Signature=Ehdn1Y87Wsk1u3aX9C8lfa9GCsVGzRh1e7VxLEin50D0SJ7yqUKnIlci-Zm6BIQtqu99qR6eMOnf22us3F3QraHEZQuV5spCExORp0bmcrVzHt~VjSt3WgFPJ92RTgbuf~-mYT25fOpkn6Oyxr3UdYGw2SlN0Z-9HwEEN5p~d2HLY1MVnfftsJCVsuMX6--vv3bi7G79BFJyWGwJCwWB52zhr4IKZyRWSQbuTfuBugPKFCVdl9uZIPtOOZWNA4p2BHbeXmvu-4m8AwBquRqBsjMoohlcKPkzzbB3NbtdD40orBjXZDLop4LL3HdOoJ8GW7hRlqKWP0moi3jIvQK2dw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-image: url(https://s3-alpha-sig.figma.com/img/1bc0/c10e/c97e7baa19291ad1b68400c352fe0b46?Expires=1694390400&Signature=Ehdn1Y87Wsk1u3aX9C8lfa9GCsVGzRh1e7VxLEin50D0SJ7yqUKnIlci-Zm6BIQtqu99qR6eMOnf22us3F3QraHEZQuV5spCExORp0bmcrVzHt~VjSt3WgFPJ92RTgbuf~-mYT25fOpkn6Oyxr3UdYGw2SlN0Z-9HwEEN5p~d2HLY1MVnfftsJCVsuMX6--vv3bi7G79BFJyWGwJCwWB52zhr4IKZyRWSQbuTfuBugPKFCVdl9uZIPtOOZWNA4p2BHbeXmvu-4m8AwBquRqBsjMoohlcKPkzzbB3NbtdD40orBjXZDLop4LL3HdOoJ8GW7hRlqKWP0moi3jIvQK2dw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   }
   .rec-1 {
     height: 40px;
@@ -42,10 +42,17 @@
     z-index: 0;
   }
 }
+.sw-right {
+  width: 180px;
+    background-image: url(../assets/images/line_end_arrow_notch.svg) !important;
+    background-repeat: no-repeat;
+    &::after {
+      content: ''
+    }
+}
 .what-section-swiper {
   position: relative;
   z-index: 200;
-  padding: 0 180px;
   height: 560px;
   .swiper-slide {
     height: 100%;
@@ -55,6 +62,14 @@
   .swiper-button-next {
     width: 180px;
     background-image: url(../assets/images/line_end_arrow_notch.svg) !important;
+    background-repeat: no-repeat;
+    &::after {
+      content: ''
+    }
+  }
+  .swiper-button-prev {
+    width: 180px;
+    background-image: url(../assets/images/line_start_arrow_notch.svg) !important;
     background-repeat: no-repeat;
     &::after {
       content: ''

@@ -20,7 +20,7 @@
       <div class="rec-1 mb-2"></div>
       <h2 class="ls-lg-48 mb-lg-12">什麼是<br>ALPHABOX+</h2>
         <!-- <img class="custom-button-prev" src="../assets/images/line_start_arrow_notch.svg" alt=""> -->
-          <div class="swiper what-section-swiper">
+          <div class="container"><div class="swiper what-section-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide" style="background-image: url(../assets/images/hand-take-phone.png);">
                 <div class="px-10 d-flex flex-column justify-content-center align-items-end">
@@ -47,7 +47,8 @@
             <!-- <div class="swiper-button-next"></div> -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-          </div>
+          </div></div>
+          
         <!-- <img class="custom-button-next" src="../assets/images/line_end_arrow_notch.svg" alt=""> -->
       
     </section>
@@ -374,11 +375,10 @@
       });
       const swiper2 = new Swiper('.what-section-swiper', {
         // Optional parameters
-        slidesPerView: "1",
         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
       </script>
 </body>
