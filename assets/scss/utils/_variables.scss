@@ -382,6 +382,7 @@ $spacers: (
   4: $spacer, // 16
   5: $spacer * 1.25, // 20
   6: $spacer * 1.5, // 24
+  7: $spacer * 1.75, // 28
   8: $spacer * 2, // 32
   9: $spacer * 2.25, // 36
   10: $spacer * 2.5, // 40
@@ -480,7 +481,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
+$grid-columns:                16;//12 !default;
 $grid-gutter-width:           2rem; //1.5rem !default; custom
 $grid-row-columns:            6 !default;
 

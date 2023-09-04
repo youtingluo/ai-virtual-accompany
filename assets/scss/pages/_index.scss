@@ -12,15 +12,13 @@
 .banner {
   @include gradient-radial($primary-400, $primary-dark);
   .banner-transform-top {
+    
     transform: translateY(104px);
     margin-top: -104px;
     z-index: 20;
   }
   .copy-color {
     color: #AD93CF;
-  }
-  .minus-margin {
-    margin-left: -16.66666667%;
   }
 }
 .what-us {
