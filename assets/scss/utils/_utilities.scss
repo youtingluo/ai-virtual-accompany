@@ -1,12 +1,20 @@
-.lt-space-16 {
-  letter-spacing: 16px;
+.w-416 {
+  width: 416px;
+  // max-width: 416px;
 }
-.lt-space-20 {
-  letter-spacing: 20px;
+
+.h-676 {
+  height: 676px;
 }
-.lt-space-40 {
-  letter-spacing: 40px;
+.h-580 {
+  height: 580px;
 }
-.lt-space-48 {
-  letter-spacing: 48px;
+.object-cover {
+  object-fit: cover;
+}
+.bgs-cover {
+  background-size: cover;
+}
+.bgp-center {
+  background-position: top;
 }

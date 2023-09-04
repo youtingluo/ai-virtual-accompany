@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
   </head>
-  <style>
-    .carousel-inner {
-      height: 560px;
-    }
-
-  </style>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="bg-black">
-      <div class="container">
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/images/hand-take-phone.png" class="d-block w-100" alt="...">
+    <div class="banner pt-lg-14">
+      <div class="container-fluid overflow-hidden">
+        <img src="../assets/images/circle.png" alt="" width="196">
+        <div class="banner-transform-top">
+          <div class="d-flex justify-content-center">
+          <div class="align-self-end">
+            <a class="d-block mb-14">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
+            <div class="w-416 h-676 bgp-center bgs-cover" style="background-image: url(../assets/images/diane_vertical.png);">
+              <p>Diane</p>
             </div>
-            <div class="carousel-item">
-              <img src="../assets/images/hand-take-phone.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="text-center align-self-end">
+            
+            <p class=" fs-3">ALPHABOX+</p>
+            <p>擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            <div class="d-flex">
+              <div class="w-416 h-580 bgp-center bgs-cover mx-8" style="background-image: url(../assets/images/felix_vertical.png);"></div>
+              <div class="w-416 h-580 bgp-center bgs-cover" style="background-image: url(../assets/images/karina_verticalgle.png);"></div>
             </div>
-            <div class="carousel-item">
-              <img src="../assets/images/hand-take-phone.png" class="d-block w-100" alt="...">
-            </div>
-          </div>          
+          </div>
+          <div class="align-self-end ms-8">
+            <p class="mb-36">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+            <p class="mb-14">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+            <div class="w-416 h-676 bgp-center bgs-cover" style="background-image: url(../assets/images/vito_vertical.png);"></div>
+          </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     <%- include('./layout/footer'); -%>
 

@@ -34,7 +34,8 @@ $utilities: map-merge(
         20: 20px,
         24: 24px,
         40: 40px,
-        48: 48px
+        48: 48px,
+        80: 80px
       )
     )
   )
@@ -75,6 +76,7 @@ $utilities: map-merge(
       // Utilities
       @import "../../node_modules/bootstrap/scss/utilities/api";
       // --- custom css ---
+      @import "./utils/utilities";
       @import "./utils/font";
       @import "./base/base";
       // component
@@ -84,3 +86,6 @@ $utilities: map-merge(
 // pages
 
 @import './pages/index.scss';
+// * {
+//   outline: 1px solid red;
+// }
