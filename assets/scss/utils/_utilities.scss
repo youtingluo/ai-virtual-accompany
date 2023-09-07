@@ -1,20 +1,7 @@
-.w-416 {
-  width: 416px;
-  // max-width: 416px;
+.bg-dash {
+  background-image: url(./../images/dashed.svg);
+  background-repeat: repeat-x;
 }
-
-.h-676 {
-  height: 676px;
-}
-.h-580 {
-  height: 580px;
-}
-.object-cover {
-  object-fit: cover;
-}
-.bgs-cover {
-  background-size: cover;
-}
-.bgp-center {
-  background-position: top;
+.h2px {
+  height: 2px;
 }
