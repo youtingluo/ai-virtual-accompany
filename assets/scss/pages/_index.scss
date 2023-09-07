@@ -71,7 +71,7 @@
   @include media-breakpoint-down(md) { display: none; }
 }
 .sw-left {
-  background-image: url(../assets/images/line_start_arrow_notch.svg) !important;
+  background-image: url(../../images/line_start_arrow_notch.svg) !important;
   &.swiper-button-prev {
     position: inherit;
     &::after {
@@ -80,7 +80,7 @@
   }
 }
 .sw-right {
-  background-image: url(../assets/images/line_end_arrow_notch.png) !important;
+  background-image: url(./../images/line_end_arrow_notch.png) !important;
   &.swiper-button-next {
     position: inherit;
     &::after {
