@@ -1,1 +1,0 @@
-import"./bootstrap.min-a3ce81a6.js";new Swiper(".ai-swiper",{mousewheel:!0,slidesPerView:"3",spaceBetween:24,scrollbar:{el:".swiper-scrollbar",draggable:!0}});new Swiper(".what-section-swiper",{autoplay:{delay:4e3},navigation:{nextEl:".sw-right",prevEl:".sw-left"}});
